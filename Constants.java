@@ -24,6 +24,7 @@ public class Constants {
                     + ")" );
 
             //method call to insert the data
+            //less code/no repeats than the regular command line
             insertContact(statement, "Tim", 334447, "tim@email.com");
 
             //insert data command line
