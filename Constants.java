@@ -1,4 +1,5 @@
-// Database with String constants
+//Elena Voinu
+// Table with String constants
 import javax.naming.InsufficientResourcesException;
 import java.sql.*;
 
