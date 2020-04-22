@@ -82,6 +82,7 @@ public class Constants {
         }
     }
 
+    //method to insert data into our database
     private static void insertContact(Statement statement, String name, int phone, String email) throws SQLException {
         statement.execute("INSERT INTO " + TABLE_CONTACTS +
                 " (" + COLUMN_NAME + ", " +
