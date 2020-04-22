@@ -62,6 +62,8 @@ public class Constants {
                     + " WHERE " +COLUMN_NAME + "='Joe'");
 
             //query the database
+            //The object of ResultSet maintains a cursor pointing to a row of a table. 
+            //Initially, cursor points to before the first row
             ResultSet resultSet = statement.executeQuery("SELECT * FROM " + TABLE_CONTACTS);
             while (resultSet.next()){
                 System.out.println(resultSet.getString(COLUMN_NAME ) + " "
