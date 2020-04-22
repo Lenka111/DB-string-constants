@@ -52,6 +52,7 @@ public class Constants {
                     + COLUMN_EMAIL + ")"
                     + "VALUES('Fido', 1111166666, 'Fido@EMAIL.COM')");
 
+            //update an existing contact
             statement.execute("UPDATE " + TABLE_CONTACTS + " SET "
                     + COLUMN_PHONE + "=557789"
                     + " WHERE " + COLUMN_NAME + "='Jane'");
