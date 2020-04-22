@@ -57,9 +57,11 @@ public class Constants {
                     + COLUMN_PHONE + "=557789"
                     + " WHERE " + COLUMN_NAME + "='Jane'");
 
+            //delete data from the db
             statement.execute("DELETE FROM " + TABLE_CONTACTS
                     + " WHERE " +COLUMN_NAME + "='Joe'");
 
+            //query the database
             ResultSet resultSet = statement.executeQuery("SELECT * FROM " + TABLE_CONTACTS);
             while (resultSet.next()){
                 System.out.println(resultSet.getString(COLUMN_NAME ) + " "
