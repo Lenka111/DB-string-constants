@@ -65,6 +65,8 @@ public class Constants {
             //The object of ResultSet maintains a cursor pointing to a row of a table. 
             //Initially, cursor points to before the first row
             ResultSet resultSet = statement.executeQuery("SELECT * FROM " + TABLE_CONTACTS);
+            
+            //	resultSet.next() is used to move the cursor to the one row next from the current position
             while (resultSet.next()){
                 System.out.println(resultSet.getString(COLUMN_NAME ) + " "
                                  + resultSet.getInt(COLUMN_PHONE) + " "
