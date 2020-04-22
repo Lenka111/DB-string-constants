@@ -13,7 +13,15 @@ public class Constants {
 
     public static void main(String[] args) {
         try{
+            
+            //Attempts to establish a connection to the given database URL. 
+            //The DriverManager attempts to select an appropriate driver from the set of registered JDBC drivers
             Connection connection = DriverManager.getConnection(CONNECTION_STRING);
+            
+            //A Statement is an interface that represents a SQL statement. 
+            //You execute Statement objects, and they generate ResultSet objects, 
+            //which is a table of data representing a database result set. 
+            //You need a Connection object to create a Statement object.
             Statement statement = connection.createStatement();
 
             statement.execute("DROP TABLE IF EXISTS " + TABLE_CONTACTS);
