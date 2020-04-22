@@ -26,6 +26,7 @@ public class Constants {
             //method call to insert the data
             insertContact(statement, "Tim", 334447, "tim@email.com");
 
+            //insert data command line
             statement.execute("INSERT INTO " + TABLE_CONTACTS +
                     "(" + COLUMN_NAME + ", "
                     + COLUMN_PHONE + ", "
